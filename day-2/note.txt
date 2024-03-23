@@ -1,0 +1,32 @@
+I. Các kiểu dữ liệu chính trong JS
+
+kiểu tham trị (value type)
+string (chuỗi)
+number (số)
+NaN (Not a number)
+undefined (khai báo biến mà ko có giá trị)
+null 
+Symbol
+
+Kiểu tham chiếu (Refenrence type)
+array
+object
+function
+
+II. Một số hàm built-in trong JS
+
+1. Alert
+2. Console (đã học)
+3. Confirm
+4. Prompt
+5. set time out
+6. set interval
+
+III. Toán tử trong JS
+1. Toán tử số học (+ - * / ** % ++ --)
+2. Toán tử gán ( = )
+3. Toán tử so sánh (> < =)
+4. Toán tử logic (&& ||)
+
+
+

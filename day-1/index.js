@@ -1,22 +1,7 @@
 // Khai báo biến
-// var + tên biến
+// var + tên biến (sau này let const)
 
-var total;
+var total = 1;
 
 // gán giá trị cho 1 biến
 var a = 1;
-
-// Các kiểu dữ liệu chính trong js
-
-// kiểu tham trị (value type)
-// string
-// number
-// NaN
-// undefined
-// null
-// Symbol
-
-// Kiểu tham chiếu (Refenrence type)
-// array
-// object
-// function
