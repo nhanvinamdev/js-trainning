@@ -1,0 +1,16 @@
+Cấu trúc của 1 trang web gồm 3 phần chính
+-html: Khung xương
+-css: Da thịt
+-js: Bó cơ
+
+Java 
+Nodejs // Javascript
+
+
+Quản lý src code
+
+bitbucket -> Prudential xài
+github
+gitlab
+
+git
