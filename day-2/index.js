@@ -93,3 +93,13 @@ console.log("_sum:", _sum);
 // Tại sao lại chia làm 2 loại?
 // Tham trị: lưu giá trị vào ô nhớ : Ví dụ var a = 1 => lưu giá trị 1 vào ô nhớ
 // Tham chiếu: Lưu địa chỉ vào ô nhớ (nặng quá lưu méo nổi)
+
+function getFullName(firstName, lastName) {
+  var fullName = firstName + " " + lastName;
+
+  // return fullName;
+}
+
+var _fullName = getFullName("Nam", "Nhan");
+
+console.log(_fullName + "17025741");
