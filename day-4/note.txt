@@ -32,8 +32,8 @@ III. Mảng trong JS (array)
 - Lấy phần tử theo index
 
 IV. Làm việc với array
-1. toString
-2. join
+1. toString: convert 1 array sang string
+2. join: convert 1 array sang string và cho phép chỉnh sửa dấu ,
 3. pop: Xóa phần tử ở cuối mảng, và trả về phần tử đã xóa, hàm này làm thay đổi kích thước mảng ban đầu
 4. shift: Xóa phần tử ở đầu mảng, và trả về phần tử đã xóa, hàm này làm thay đổi kích thước mảng ban đầu
 5. push: Thêm phần tử được chỉ định vào cuối mảng và trả về độ dài mới của mảng và làm thay đổi mảng ban đầu
@@ -42,10 +42,18 @@ IV. Làm việc với array
     - splice(start)
     - splice(start, deleteCount)
     - splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+    => start: giá trị index bắt đầu thực hiện câu lệnh
+    => deleteCount: Số phần tử muốn xóa 
+    => item: Giá trị thêm vào
 8. slice: Kết quả trả về hông bao gồm index kết thúc
     - slice()
     - slice(start)
     - slice(start, end)
+
+    => start:  giá trị index bắt đầu thực hiện câu lệnh
+    => end: bắt đầu từ giá trị này thì sẽ không xuất dữ liệu
+    
 9. concat: Nối các mảng lại với nhau
 
-
+tham khảo: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
