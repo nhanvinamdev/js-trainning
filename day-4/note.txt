@@ -1,0 +1,51 @@
+I. Câu lệnh if else (else if)
+if(điều kiện đúng hoặc sai){}
+else if(điều kiện đúng hoặc sai){}
+else{}
+EX:
+    var day = new Date().getDay();
+    if(day == 0){
+        document.write("Hôm nay là Chủ Nhật");
+    }else if(day == 1){
+        document.write("Hôm nay là Thứ Hai");
+    }else if(day == 2){
+        document.write("Hôm nay là Thứ Ba");
+    }else if(day == 3){
+        document.write("Hôm nay là Thứ Tư");
+    }else if(day == 4){
+        document.write("Hôm nay là Thứ Năm");
+    }else if(day == 5){
+        document.write("Hôm nay là Thứ Sáu");
+    }else{
+        document.write("Hôm nay là Thứ Bảy");
+    }
+
+II. Switch case
+
+III. Mảng trong JS (array)
+1. Tạo Mảng
+- Cách Tạo
+- Nên sử dụng cách nào? tại sao?
+- Kiểm tra data type
+2. Truy xuất Mảng
+- Độ dài Mảng
+- Lấy phần tử theo index
+
+IV. Làm việc với array
+1. toString
+2. join
+3. pop: Xóa phần tử ở cuối mảng, và trả về phần tử đã xóa, hàm này làm thay đổi kích thước mảng ban đầu
+4. shift: Xóa phần tử ở đầu mảng, và trả về phần tử đã xóa, hàm này làm thay đổi kích thước mảng ban đầu
+5. push: Thêm phần tử được chỉ định vào cuối mảng và trả về độ dài mới của mảng và làm thay đổi mảng ban đầu
+6. unshift: Thêm phần tử được chỉ định vào đầu mảng và trả về độ dài mới của mảng và làm thay đổi mảng ban đầu
+7. splice: Thay đổi nội dung của một mảng bằng cách loại bỏ hoặc thay thế các phần tử hiện có và/hoặc thêm các phần tử mới vào vị trí.
+    - splice(start)
+    - splice(start, deleteCount)
+    - splice(start, deleteCount, item1, item2, /* …, */ itemN)
+8. slice: Kết quả trả về hông bao gồm index kết thúc
+    - slice()
+    - slice(start)
+    - slice(start, end)
+9. concat: Nối các mảng lại với nhau
+
+
