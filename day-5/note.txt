@@ -1,0 +1,32 @@
+Hàm (function) trong js
+
+1. Hàm?
+- Là một khối mã
+- Làm một hoặc nhiều công việc cụ thể
+
+2. Loại Hàm
+- built in (đã học)
+- tự định nghĩa (nhắc lại)
+
+3. Tính chất
+- Không thực thi khi định nghĩa
+- Sẽ được thực thi khi được gọi
+- Có thể nhận tham số [
+    - Định nghĩa
+    - Kiểu dữ liệu
+    - Tính private
+    - Truyền 1 hoặc nhiều tham số
+]
+- Có thể trả về 1 giá trị
+
+4. Một số điều cần biết [
+    - Khi đặt trùng tên
+    - Khai báo biến trong hàm như thế nào?
+    - Có thể định nghĩa hàm trong hàm được không?
+]
+
+5. Các loại function [
+    1. Declaration function
+    2. Expression function
+    3. Arrow function
+]

@@ -57,3 +57,7 @@ IV. Làm việc với array
 9. concat: Nối các mảng lại với nhau
 
 tham khảo: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+V. Toán tử 3 ngôi:
+EX: condition ? Đúng : Sai
