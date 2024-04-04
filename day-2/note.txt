@@ -13,3 +13,20 @@ array
 object
 function
 
+
+II. falsy và Truethy: Có nghĩa là khi ép kiểu 1 cái kiểu tham trị hoặc tham chiếu về Boolean
+thì nó sẽ là Truethy (nếu là true) và ngược lại
+
+var a = "abc" -> Boolean(a) -> true // Truethy
+var b = null -> Boolean(b) -> false // falsy
+
+
+// Falsy: Bao gồm 6 giá trị chính
+1. 0
+2. "" | ''
+3. NaN
+4. null
+5. undefined
+6. false
+
+var a = false -> Boolean(a) -> false -> falsy
