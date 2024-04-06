@@ -1,10 +1,9 @@
 I. CHUỖI TRONG JS
 1. Cách tạo chuỗi
-   - Nên dùng cách nào ? Lý do ?
+   - Nên dùng cách nào ? Lý do ?: Dùng cách 1 vì cách 2 sẽ ra 1 cái object
    - Kiểm tra data type
 2. Xem độ dài chuỗi 
-3. Chú ý độ dài khi viết code
-4. Template string ES6
+3. Template string ES6
 
 II. Làm việc với chuỗi trong JS
 1. length: Kiễm tra độ dài chuỗi
@@ -13,11 +12,13 @@ II. Làm việc với chuỗi trong JS
     - lastIndexOf
     _ search: có thể dùng với biểu thức chính quy
 3. Cut string
-    - slice
+    - slice:
 4. Replace
-5. toUpperCase
-6. toLowerCase
-7. Trim 
-8. Split
+5. toUpperCase: thay đổi tất cả chuỗi thành in hoa
+6. toLowerCase: thay đổi tất cả chuỗi thành in thường
+7. Trim : cắt khoảng trống đầu và cuối chuỗi
+8. Split: convert từ chuỗi sang mảng chuổi theo điều kiện truyền vào
 9. Get a character by index
-    - charAt
+    - charAt: truyền vào vị trí và trả ra kí tự ở vị trí đó
+
+https://www.w3schools.com/js/js_string_methods.asp
