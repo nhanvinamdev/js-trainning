@@ -1,0 +1,23 @@
+I. CHUỖI TRONG JS
+1. Cách tạo chuỗi
+   - Nên dùng cách nào ? Lý do ?
+   - Kiểm tra data type
+2. Xem độ dài chuỗi 
+3. Chú ý độ dài khi viết code
+4. Template string ES6
+
+II. Làm việc với chuỗi trong JS
+1. length: Kiễm tra độ dài chuỗi
+2. Find Index:
+    - indexOf
+    - lastIndexOf
+    _ search: có thể dùng với biểu thức chính quy
+3. Cut string
+    - slice
+4. Replace
+5. toUpperCase
+6. toLowerCase
+7. Trim 
+8. Split
+9. Get a character by index
+    - charAt
