@@ -130,11 +130,11 @@ var languages = ["Javascript", "PHP", "java"];
 
 // 4.7
 
-// var languages = ["Javascript", "PHP", "java"];
+var languages = ["Javascript", "PHP", "java"];
 
 // languages.splice(1, 1, "Ruby", "AAA");
 
-// console.log(languages);
+ console.log(languages);
 
 // // 4.8
 
@@ -145,6 +145,6 @@ var languages = ["Javascript", "PHP", "java"];
 // console.log(_languages);
 
 // 4.9
-var languages2 = ["A", "B", "C"];
+// var languages2 = ["A", "B", "C"];
 
-console.log(languages.concat(languages2));
+// console.log(languages.concat(languages2));

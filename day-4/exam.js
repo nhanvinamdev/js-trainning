@@ -9,3 +9,39 @@
 // in ra console là học sinh gì
 
 // if else và swich case
+//1. if else
+
+ var Diem=0;
+if (Diem>8) 
+{
+    console.log("Nam la hoc sinh gioi")
+}
+ else if (Diem>6)
+{
+     console.log("Nam la hoc sinh kha")   
+}
+else if (Diem>3)
+{
+    console.log ("Nam la hoc sinh trung binh")
+}
+else console.log ("Nam la hoc sinh yeu")
+//2. swith case
+switch (Diem) {
+      case (9,10): {
+        console.log("Nam la hoc sinh gioi");
+        break;
+      }
+    
+      case (6,7,8): {
+        console.log("Nam la hoc sinh kha");
+        break;
+      }
+    
+      case (4,5): {
+        console.log("Nam la hoc sinh trung binh");
+        break;
+      }
+      default :
+      {console.log("Nam la hoc sinh yeu");
+    break;}
+    }

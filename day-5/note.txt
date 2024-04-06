@@ -29,5 +29,5 @@ Qui tắc đặt tên cho hàm là phải là action
 
 5. Các loại function [
     1. Declaration function
-    2. Expression function
+    2. Expression function: 
 ]
