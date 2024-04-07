@@ -7,15 +7,15 @@
 // console.log(sum(1,2,3));
 
 // function hieu(a,b,c) {
-   
+
 //     return a - b - c
 //    }
-   
+
 //    console.log(hieu(1,0,3));
 
-// function chia(a,b) 
+// function chia(a,b)
 // {
-// //    if (b===0) 
+// //    if (b===0)
 // //    {
 // //     return "Vui long nhap gia tri cua b khac 0";
 // //    }
@@ -59,15 +59,14 @@
 
 // Viết hàm tính chu vi hình tròn và diện tính hình tròn
 
-function checkTypeNumber(a)
-{
-    if(typeof a !== 'number') return false
-    return true
+function checkTypeNumber(a) {
+  if (typeof a !== "number") return false;
+  return true;
 }
 
 function chuvi(d) {
-    const PI=3.14
-    if(!checkTypeNumber(d)) return "Vui long nhap so"
-    return d*PI
+  const PI = 3.14;
+  if (!checkTypeNumber(d)) return "Vui long nhap so";
+  return d * PI;
 }
-console.log( chuvi("s"));
+console.log(chuvi("s"));
