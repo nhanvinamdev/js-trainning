@@ -1,0 +1,23 @@
+I. Khái niệm
+- object là gì?
+- Vì sao phải sử dụng nó?
+- Cách khai báo và sử dụng object?
+
+II. Thao tác với object
+- Lấy một key từ 1 object
+- Thêm một key vào object
+- Xóa một key ra khỏi object
+
+III. Hàm built in
+1. Object.keys
+2. Object.values
+3. Object.entries
+4. Object.fromEntries
+5. Object.is
+6. Object.freeze: Để có tính bất biến nghiêm ngặt, đảm bảo giá trị và cấu trúc đối tượng vẫn hoàn toàn cố định.
+7. Object.seal: Khi muốn có một mức độ bất biến nhưng vẫn cần sự linh hoạt để thay đổi các giá trị hiện có.
+
+Feature	            Object.seal()	Object.freeze()
+Adds new properties 	No	               No
+Deletes properties  	No	               No
+Modifies properties	    Yes	                No
