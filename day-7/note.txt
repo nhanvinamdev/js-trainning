@@ -8,7 +8,9 @@ II. Thao tác với object
 - Thêm một key vào object
 - Xóa một key ra khỏi object
 
-III. Hàm built in
+III. OOP là gì
+
+IV. Hàm built in
 1. Object.keys
 2. Object.values
 3. Object.entries
