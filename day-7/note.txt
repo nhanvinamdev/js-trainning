@@ -1,5 +1,8 @@
 I. Khái niệm
-- object là gì?
+- object là gì?: Đối tượng [
+    1. thuộc tính
+    2. Phương thức (có thể hiểu nó là hàm)
+]
 - Vì sao phải sử dụng nó?
 - Cách khai báo và sử dụng object?
 
@@ -8,14 +11,16 @@ II. Thao tác với object
 - Thêm một key vào object
 - Xóa một key ra khỏi object
 
-III. OOP là gì
+III. OOP là gì: Lập trình hướng đối tượng
+- Ngôn ngữ OOP: Java, C#
+- Functional programming: lập trình hàm
 
 IV. Hàm built in
-1. Object.keys
-2. Object.values
-3. Object.entries
-4. Object.fromEntries
-5. Object.is
+1. Object.keys: Lấy tất cả các keys trong object
+2. Object.values: Lấy tất cả các values trong object
+3. Object.entries: Lấy tất cã keys và values ra luôn
+4. Object.fromEntries : ngược lại với entries
+5. Object.is: Dùng để so sánh 2 values giống như ===: 3 trường hợp xài NaN, -0, +0
 6. Object.freeze: Để có tính bất biến nghiêm ngặt, đảm bảo giá trị và cấu trúc đối tượng vẫn hoàn toàn cố định.
 7. Object.seal: Khi muốn có một mức độ bất biến nhưng vẫn cần sự linh hoạt để thay đổi các giá trị hiện có.
 
@@ -23,3 +28,5 @@ Feature	            Object.seal()	Object.freeze()
 Adds new properties 	No	               No
 Deletes properties  	No	               No
 Modifies properties	    Yes	                No
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
