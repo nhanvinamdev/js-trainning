@@ -5,7 +5,10 @@ I. Khái niệm:
 II. Các loại vòng lặp
 
 1. Vòng lặp chính quy (tất cả ngôn ngữ lập trình nào cũng có)
-- for loop
+- for loop: Gồm 3 thành phần chính
+    + giá trị khởi tạo
+    + Điều kiện (true/ false)
+    + Bước nhảy (updation)
 - while
 - do-while
 
