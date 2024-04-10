@@ -1,0 +1,21 @@
+VÒNG LẶP TRONG JS
+I. Khái niệm:
+- Vòng lặp là công cụ được dùng để thực thi một số việc giống nhau, được lặp đi lặp lại nhiều lần cho đến khi tìm được kết quả
+
+II. Các loại vòng lặp
+
+1. Vòng lặp chính quy (tất cả ngôn ngữ lập trình nào cũng có)
+- for loop
+- while
+- do-while
+
+2. Vòng lặp riêng biệt (built in trong js)
+- for of
+- for in 
+- map
+- foreach
+- filter
+- find
+- findIndex
+- reduce (cái này khó học sau)
+=> Cả 2 đều cực kì quan trọng
