@@ -5,18 +5,21 @@ I. Khái niệm:
 II. Các loại vòng lặp
 
 1. Vòng lặp chính quy (tất cả ngôn ngữ lập trình nào cũng có)
-- for loop: Gồm 3 thành phần chính
+- for : Gồm 3 thành phần chính
     + giá trị khởi tạo
     + Điều kiện (true/ false)
     + Bước nhảy (updation)
 - while
 - do-while
 
+- Từ khóa break: Dùng để kết thúc vòng lặp ngay lập tức
+
 2. Vòng lặp riêng biệt (built in trong js)
 - for of
-- for in 
-- map
+- for in
 - foreach
+
+- map
 - filter
 - find
 - findIndex
