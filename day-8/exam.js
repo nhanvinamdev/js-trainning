@@ -15,4 +15,3 @@
 // hai số đã được nhập (a = 5, b = 9 => tổng số lẻ = 21, tổng số chẵn = 14)
 
 // 12. In bảng cửu chương rút gọn: Bảng cửu chương rút gọn là bảng có hàng là kết quả của phép nhân một số với các giá trị từ 1 tới 10. Chúng ta sẽ in 9 hàng tương ứng với các số từ 2 tới 10.
-// 13. Vẽ tam giác đều xuôi và ngược
