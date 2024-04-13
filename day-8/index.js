@@ -119,8 +119,6 @@ for (const key in user) {
   // let value = user[key];
   console.log(key);
 }
-//quét tất cả các key trong object
-
 //foreach
 
 // languages.forEach(function (value, index) {
