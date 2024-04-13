@@ -15,10 +15,13 @@ II. Các loại vòng lặp
 - Từ khóa break: Dùng để kết thúc vòng lặp ngay lập tức
 
 2. Vòng lặp riêng biệt (built in trong js)
-- for of
-- for in
-- foreach
+Các vòng lặp này sẽ dùng cho array, có thể là có string
+Những hàm này dùng cho ES6+
+- for of: array
+- for in: object
 
+Hàm chỉ riêng cho array
+- foreach
 - map
 - filter
 - find
