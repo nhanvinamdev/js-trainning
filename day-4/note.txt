@@ -61,3 +61,10 @@ tham khảo: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 
 V. Toán tử 3 ngôi:
 EX: condition ? Đúng : Sai
+
+if(condition){
+    "Dung"
+}
+else{
+    "Sai"
+}
