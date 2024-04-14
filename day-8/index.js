@@ -138,10 +138,10 @@ for (const key in user) {
 // Điểm khác nhau giữa map và foreach:
 // map : Tạo ra mảng mới và có thể gán nó vào 1 biến
 // foreach: không thể
-// var a = languages.map(function (value, index) {
-//   return `${value}`.toUpperCase();
-// });
-// console.log(a);
+var a = languages.map(function (value, index) {
+  return `${value}`.toUpperCase();
+});
+console.log(a);
 
 // filter
 // Điều kiện filter phải là true hoặc false
