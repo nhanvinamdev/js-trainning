@@ -58,3 +58,51 @@ function bT3(n) {
 // hai số đã được nhập (a = 5, b = 9 => tổng số lẻ = 21, tổng số chẵn = 14)
 
 // 12. In bảng cửu chương rút gọn: Bảng cửu chương rút gọn là bảng có hàng là kết quả của phép nhân một số với các giá trị từ 1 tới 10. Chúng ta sẽ in 9 hàng tương ứng với các số từ 2 tới 10.
+
+// MAP, FILTER, FIND
+/**
+ * Input: numbers = [1, 2, 3, 4, 5];
+ * Output : _numbers = [2, 4 , 6, 8, 10]
+ *
+ * Input: const strings = ["hello", "world", "javascript"];
+ * Output: ["HELLO", "WORLD", "JAVASCRIPT"]
+ *
+ * Input: const objects = [{ name: "John" }, { name: "Jane" }, { name: "Peter" }];
+ * Output: [{ id: 1, name: "John" }, { id: 2, name: "Jane" }, { id: 3, name: "Peter" }]
+ *
+ * Input: const products = [{ id: 1, name: "Laptop", price: 1000 }, { id: 2, name: "Phone", price: 500 }, { id: 3, name: "Tablet", price: 300 }];
+ * Với discountedPrice = price * 0.8, shippingFee = Nếu price >= 500 thì là 0, ngược lại là phí 50k
+ * Output: [{ id: 1, discountedPrice: 800, shippingFee: 0 }, { id: 2, discountedPrice: 400, shippingFee: 0 }, { id: 3, discountedPrice: 240, shippingFee: 50 }]
+ * 
+ * Input: const coordinates = [
+  { latitude: 37.783333, longitude: -122.416667 },
+  { latitude: 40.7128, longitude: -74.0060 },
+  { latitude: 34.0522, longitude: -118.2437 }
+  ];
+  Output: ["(37.783333, -122.416667)", "(40.7128, -74.0060)", "(34.0522, -118.2437)"]
+
+
+  FILTER:
+  Input: const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  Output: [2, 4, 6, 8, 10]
+
+  Input: const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Phone", price: 500 },
+  { name: "Tablet", price: 300 },
+  { name: "Watch", price: 200 }
+];
+ Tìm các sản phẩm có giá cao hơn $300 trong một mảng:
+
+  Input: const strings = ["Hello", "", "World", "", "JavaScript"];
+  Output: ["Hello", "World", "JavaScript"]
+
+
+  Input: const users = [
+  { name: "John", age: 25 },
+  { name: "Jane", age: 32 },
+  { name: "Peter", age: 18 },
+  { name: "Mary", age: 28 }
+];
+Output: Tìm các người dùng có độ tuổi từ 20 đến 30 trong một mảng:
+ */
