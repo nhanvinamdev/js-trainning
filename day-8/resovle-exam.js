@@ -152,3 +152,99 @@ function bt12() {
 }
 
 // bt12();
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// MAP, FILTER
+/**
+ * Input: numbers = [1, 2, 3, 4, 5];
+ * Output : _numbers = [2, 4 , 6, 8, 10]
+ *
+ * Input: const strings = ["hello", "world", "javascript"];
+ * Output: ["HELLO", "WORLD", "JAVASCRIPT"]
+ *
+ * Input: const objects = [{ name: "John" }, { name: "Jane" }, { name: "Peter" }];
+ * Output: [{ id: 1, name: "John" }, { id: 2, name: "Jane" }, { id: 3, name: "Peter" }]
+ *
+ * Input: const products = [{ id: 1, name: "Laptop", price: 1000 }, { id: 2, name: "Phone", price: 500 }, { id: 3, name: "Tablet", price: 300 }];
+ * Với discountedPrice = price * 0.8, shippingFee = Nếu price >= 500 thì là 0, ngược lại là phí 50k
+ * Output: [{ id: 1, discountedPrice: 800, shippingFee: 0 }, { id: 2, discountedPrice: 400, shippingFee: 0 }, { id: 3, discountedPrice: 240, shippingFee: 50 }]
+ * 
+ * Input: const coordinates = [
+  { latitude: 37.783333, longitude: -122.416667 },
+  { latitude: 40.7128, longitude: -74.0060 },
+  { latitude: 34.0522, longitude: -118.2437 }
+  ];
+  Output: ["(37.783333, -122.416667)", "(40.7128, -74.0060)", "(34.0522, -118.2437)"]
+
+
+  FILTER:
+  Input: const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  Output: [2, 4, 6, 8, 10]
+
+  Input: const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Phone", price: 500 },
+  { name: "Tablet", price: 300 },
+  { name: "Watch", price: 200 }
+];
+ Output: Tìm các sản phẩm có giá cao hơn $300 trong một mảng
+
+  Input: const strings = ["Hello", "", "World", "", "JavaScript"];
+  Output: ["Hello", "World", "JavaScript"] !== ""
+
+
+  Input: const users = [
+  { name: "John", age: 25 },
+  { name: "Jane", age: 32 },
+  { name: "Peter", age: 18 },
+  { name: "Mary", age: 28 }
+];
+Output: Tìm các người dùng có độ tuổi từ 20 đến 30 trong một mảng:
+ */
+
+// Vòng lặp 1: number = 1 * 2 -> [2]
+// Vòng lặp 2: number = 2 * 2 -> [2, 4]
+// Vòng lặp 3: number = 3 * 2 -> [2, 4, 6]
+// Vòng lặp cuối cùng -> number = 5 * 2 -> [ 2, 4, 6, 8, 10 ]
+
+// 2.
+//  * Input: const products = [{ id: 1, name: "Laptop", price: 1000 }, { id: 2, name: "Phone", price: 500 }, { id: 3, name: "Tablet", price: 300 }];
+//  * Với discountedPrice = price * 0.8, shippingFee = Nếu price >= 500 thì là 0, ngược lại là phí 50k
+//  * Output: [{ id: 1, discountedPrice: 800, shippingFee: 0 }, { id: 2, discountedPrice: 400, shippingFee: 0 }, { id: 3, discountedPrice: 240, shippingFee: 50 }]
+//  *
+
+const products = [
+  { id: 1, name: "Laptop", price: 1000 },
+  { id: 2, name: "Phone", price: 500 },
+  { id: 3, name: "Tablet", price: 300 },
+];
+
+// { id: 1, discountedPrice: 800, shippingFee: 0 }
+
+const outputProducts = products.map(function (product, index, array) {
+  // Nghĩa là tạo ra một cái object mới, có cái id = với cái object cũ -> id === product.id
+
+  let newObject = {
+    id: product.id,
+    discountedPrice: product.price * 0.8,
+
+    // shippingFee = Nếu price >= 500 thì là 0, ngược lại là phí 50k
+    shippingFee: product.price >= 500 ? 0 : 50000,
+  };
+
+  return newObject;
+});
+
+// console.log("outputProducts:", outputProducts);
+
+// FILTER
+// 1. Input: const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Output: [2, 4, 6, 8, 10]
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const outputNumbers2 = numbers2.filter(function (number) {
+  return number % 2 === 0;
+});
+
+// Vòng lặp 1 -> number = 1 -> 1 % 2 === 0 ? [1] : []
+// Vòng lặp 2 -> number = 2 -> 2 % 2 === 0 ? [2] : [] -> Kết quả hiện tại của mảng thu được là [2]
+// Vòng lặp 4 -> number = 4 -> 4 % 2 === 0 ? [2, 4] : [2] -> Kết quả hiện tại của mảng thu được là [2,4]
