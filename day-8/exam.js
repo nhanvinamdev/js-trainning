@@ -62,49 +62,48 @@
 
 // // 6. In ra màn hình các số chia hết cho 5 từ 1 đến n.
 // (VD: n = 20 -> 5 10 15 20)
-// function bT6(n) {
-//   let i = 1;
-//   for (; i <= n; i++) {
-//     if (i % 5 === 0) console.log(i);
-//   }
-// }
-// bT6(100);
+function bT6(n) {
+  let i = 1;
+  for (; i <= n; i++) {
+    if (i % 5 === 0) console.log(i);
+  }
+}
+bT6(10);
 
 // 7. Tính số lượng phần tử trong dãy số (12345 -> 5)
-// function bT7(n) {
-//   let c = Math.abs(n);
-//   let i = 0;
-//   for (; c > 0; c = Math.floor(c / 10)) {
-//     i++;
-//   }
-//   return i;
-// }
-// console.log(bT7(10));
+function bT7(n) {
+  let c = Math.abs(n);
+  let i = 0;
+  for (; c > 0; c = Math.floor(c / 10)) {
+    i++;
+  }
+  return i;
+}
+console.log(bT7(10));
 
 // var c = Math.floor(123 / 10);
 // console.log(Math.floor(c / 10));
 // // 8. Tính tổng số lượng phần tử trong dãy số (1234 -> 10)
-// function bT8(n) {
-//   let c = Math.abs(n);
-//   let sum = 0;
-//   let i = 0;
-//   for (; c > 0; c = Math.floor(c / 10)) {
-//     sum = sum + (c % 10);
-//   }
-//   return sum;
-// }
-// console.log(bT8(127000));
+function bT8(n) {
+  let c = Math.abs(n);
+  let sum = 0;
+  for (; c > 0; c = Math.floor(c / 10)) {
+    sum = sum + (c % 10);
+  }
+  return sum;
+}
+console.log(bT8(127));
 
 // // // 9. Bảng cữu chương 1 đến 9
-// function bT9(n) {
-//   let i = 1;
-//   for (; i <= 10 && n >= 1 && n <= 9; i++) {
-//     console.log(`${n} x ${i} = ${n * i}`);
-//   }
-//   console.log(" nhap so tu 1 den 9");
-// }
+function bT9(n) {
+  let i = 1;
+  for (; i <= 10 && n >= 1 && n <= 9; i++) {
+    console.log(`${n} x ${i} = ${n * i}`);
+  }
+  console.log(" nhap so tu 1 den 9");
+}
 
-// // bT9(11);
+bT9(11);
 
 // // 10. Tính giả trị của biểu thức S = 1.2 + 2.3 + 3.4 + ... + n( n + 1 )
 // function bT10(n) {
@@ -136,10 +135,20 @@
 // bt11(5, 9);
 // 1 2 3 4 5 6 7 8 9 10 11
 
-// // // 12. In bảng cửu chương rút gọn: Bảng cửu chương rút gọn là bảng
-// // có hàng là kết quả của phép nhân một số với các giá trị từ 1 tới 10.
-// // Chúng ta sẽ in 9 hàng tương ứng với các số từ 2 tới 10.
-// ////
+// // 12. In bảng cửu chương rút gọn: Bảng cửu chương rút gọn là bảng
+// có hàng là kết quả của phép nhân một số với các giá trị từ 1 tới 10.
+// Chúng ta sẽ in 9 hàng tương ứng với các số từ 2 tới 10.
+function bt12() {
+    for (let num = 2; num <= 10; num++)
+    {
+      console.log(`\n${num} x 1 = ${num * 1}`);
+      for (let multiplier = 2; multiplier <= 10; multiplier++) {
+        console.log(`${num} x ${multiplier} = ${num * multiplier}`);
+      }
+    }
+  }
+  
+  bt12();
 
 // // // MAP, FILTER, FIND
 // // /**
@@ -204,7 +213,7 @@ const coordinates = [
   { latitude: 34.0522, longitude: -118.2437 },
 ];
 var _coordinates = coordinates.map(function (coordinate) {
-  return `${coordinate.latitude} ${coordinate.longitude}`;
+  return `(${coordinate.latitude} ${coordinate.longitude})`;
 });
 console.log(_coordinates);
 
@@ -212,17 +221,17 @@ console.log(_coordinates);
 //   Input: const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   Output: [2, 4, 6, 8, 10]
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// var _numbers = numbers.filter(function (number) {
-//   return number % 2 === 0;
-// });
-// console.log(_numbers);
+var _numbers = numbers.filter(function (number) {
+  return number % 2 === 0;
+});
+console.log(_numbers);
 
-// //   Input: const products = [
-// //   { name: "Laptop", price: 1200 },
-// //   { name: "Phone", price: 500 },
-// //   { name: "Tablet", price: 300 },
-// //   { name: "Watch", price: 200 }
-// // ];
+  Input: const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Phone", price: 500 },
+  { name: "Tablet", price: 300 },
+  { name: "Watch", price: 200 }
+];
 // //  Tìm các sản phẩm có giá cao hơn $300 trong một mảng:
 // const products = [
 //   { name: "Laptop", price: 1200 },
