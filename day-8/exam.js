@@ -139,16 +139,15 @@ bT9(11);
 // có hàng là kết quả của phép nhân một số với các giá trị từ 1 tới 10.
 // Chúng ta sẽ in 9 hàng tương ứng với các số từ 2 tới 10.
 function bt12() {
-    for (let num = 2; num <= 10; num++)
-    {
-      console.log(`\n${num} x 1 = ${num * 1}`);
-      for (let multiplier = 2; multiplier <= 10; multiplier++) {
-        console.log(`${num} x ${multiplier} = ${num * multiplier}`);
-      }
+  for (let num = 2; num <= 10; num++) {
+    console.log(`\n${num} x 1 = ${num * 1}`);
+    for (let multiplier = 2; multiplier <= 10; multiplier++) {
+      console.log(`${num} x ${multiplier} = ${num * multiplier}`);
     }
   }
-  
-  bt12();
+}
+
+bt12();
 
 // // // MAP, FILTER, FIND
 // // /**
@@ -224,13 +223,14 @@ console.log(_coordinates);
 var _numbers = numbers.filter(function (number) {
   return number % 2 === 0;
 });
+
 console.log(_numbers);
 
-  Input: const products = [
+const products = [
   { name: "Laptop", price: 1200 },
   { name: "Phone", price: 500 },
   { name: "Tablet", price: 300 },
-  { name: "Watch", price: 200 }
+  { name: "Watch", price: 200 },
 ];
 // //  Tìm các sản phẩm có giá cao hơn $300 trong một mảng:
 // const products = [
