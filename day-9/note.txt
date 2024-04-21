@@ -1,0 +1,12 @@
+1. Object constructor
+- Khái niệm
+
+2. Object prototype
+- Prototype là gì?
+- Sử dụng khi nào?
+
+3. Callback function: được gọi là callback function khi và chỉ khi thỏa mãn:
+- Là hàm (function) 
+- Được truyền qua đối số
+- Được gọi lại (trong hàm nhận đối số)
+
