@@ -1,10 +1,12 @@
 1. Object constructor
-- Khái niệm
+- Khái niệm: một cái bản dựng
+- Có 2 cách khai báo object constructor: thông qua class và thông qua function 
+=> Ưu tiên dùng class
 
 2. Object prototype
 - Prototype là gì?
-- Sử dụng khi nào?
+- Sử dụng khi nào?: Thêm thuộc tính vào class
 
 3. Callback function: được gọi là callback function khi và chỉ khi thỏa mãn:
 - Là hàm (function) 
-- Được truyền qua đối số
+- Được truyền qua đối số (params)
