@@ -15,6 +15,7 @@
 1. map
 2. filter
 3. find
-4. some
-5. every
+4. some: Return ra true nếu có ít nhất một phần tử thỏa mãn điều kiện
+5. every: Return ra true nếu tất cả một phần tử thỏa mãn điều kiện
 
+Some và Every luôn luôn trả ra kết quả true hoặc false
