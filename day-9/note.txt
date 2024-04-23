@@ -10,3 +10,98 @@
 3. Callback function: được gọi là callback function khi và chỉ khi thỏa mãn:
 - Là hàm (function) 
 - Được truyền qua đối số (params)
+
+4. Dùng callback function build một số hàm built-in trong array:
+1. map
+2. filter
+3. find
+4. some
+5. every
+
+
+Array.prototype.myMap = function (callBack) {
+  let result = [];
+
+  for (let i = 0; i < this.length; i++) {
+    result.push(callBack(this[i], i, this));
+  }
+  return result;
+};
+
+const _users = users?.myMap(function (elm) {
+  return {
+    name: elm.name,
+  };
+});
+
+// 2. filter
+Array.prototype.myFilter = function (callBack) {
+  let outputs = [];
+  for (let i = 0; i < this.length; i++) {
+    let condition = callBack(this[i], i, this);
+
+    condition && outputs.push(this[i]);
+  }
+  return outputs;
+};
+
+const usersAge = users.myFilter(function (elm) {
+  return elm.age > 20;
+});
+
+// 3. find
+Array.prototype.myFind = function (callBack) {
+  let output = {};
+
+  for (let i = 0; i < this.length; i++) {
+    let condition = callBack(this[i], i, this);
+
+    if (condition) {
+      output = this[i];
+      break;
+    }
+  }
+  return output;
+};
+
+const userAge = users.myFind(function (elm) {
+  return elm.age <= 20;
+});
+
+// some
+Array.prototype.mySome = function (callBack) {
+  let output = false;
+  for (let i = 0; i < this.length; i++) {
+    let condition = callBack(this[i], i, this);
+
+    if (condition) {
+      output = condition;
+      break;
+    }
+  }
+
+  return output;
+};
+
+const test = users.mySome(function (elm) {
+  return elm.age < 40;
+});
+
+// every
+Array.prototype.myEvery = function (callBack) {
+  let output = true;
+  for (let i = 0; i < this.length; i++) {
+    let condition = callBack(this[i], i, this);
+
+    if (!condition) {
+      output = false;
+      break;
+    }
+  }
+
+  return output;
+};
+
+const test2 = users.myEvery(function (elm) {
+  return elm.age < 40;
+});
