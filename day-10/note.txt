@@ -1,5 +1,8 @@
 1. DOM là gì? (Document Object Model)
-- DOM có 3 thành phần chính: Element, Attribute (classname, id, href), Text
+- DOM có 3 thành phần chính: 
++ Element, 
++ Attribute (classname, id, href), 
++ Text
 link: https://www.w3schools.com/js/js_htmldom.asp
 
 2. Một số phương thức lấy element trong DOM 
@@ -7,3 +10,6 @@ link: https://www.w3schools.com/js/js_htmldom.asp
 - getElementsByClassName
 - getElementsByTagName
 - querySelector
+
+
+link: https://www.w3schools.com/css/css_selectors.asp
