@@ -1,3 +1,9 @@
 1. DOM là gì? (Document Object Model)
 - DOM có 3 thành phần chính: Element, Attribute (classname, id, href), Text
 link: https://www.w3schools.com/js/js_htmldom.asp
+
+2. Một số phương thức lấy element trong DOM 
+- getElementById
+- getElementsByClassName
+- getElementsByTagName
+- querySelector
