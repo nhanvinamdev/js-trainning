@@ -1,0 +1,18 @@
+I. Atrribute node và text node trong HTML DOM
+- Được lấy từ đối tượng element
+
+II. DOM attribute
+- Thêm: element.attribute=""
+- Sửa: setAttribute
+- Lấy: getAttribute
+
+III. InnerText & textContent
+- Luôn luôn phải thông qua object document
+- Sự khác nhau:
++ getter: 
+InnerText: sẽ bỏ qua tất cả những element DOM và chỉ lấy đúng text của mình (nhìn thấy gì trên page thì sẽ lấy ra cái đó)
+TextContent: Lấy giá trị thật của DOM, nghĩa là nếu có khoảng cách thì vẫn sẽ lấy
+
+IV: Thêm elmemt vào element trong DOM
+1. InnerHTML
+2. OuterHTML
