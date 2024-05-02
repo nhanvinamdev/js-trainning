@@ -1,0 +1,13 @@
+1. DOM events
+Có 2 dạng DOM events: 
+- Sự kiện của ng dùng gây ra: onClick...
+- Sự kiện của trình duyệt: tải trang web,...
+
+Có 2 cách để thể hiện DOM events
+1. Gắn thẳng sự kiện vào DOM 
+2. Dùng JS
+
+
+2. Luyện tập:
+- Input/ select
+- keyup/ down
