@@ -30,13 +30,13 @@ var inputTextElement = document.querySelector("input[type='text']");
 //   console.log(e.target.value);
 // };
 
-inputTextElement.onkeyup = function (e) {
-  //   console.log(e.target.value);
-};
+// inputTextElement.onkeyup = function (e) {
+//   //   console.log(e.target.value);
+// };
 
-inputTextElement.onkeydown = function (e) {
-  console.log(e.target.value);
-};
+// inputTextElement.onkeydown = function (e) {
+//   console.log(e.target.value);
+// };
 
 // checkbox
 var inputCheckboxElement = document.querySelector("input[type='checkbox']");
@@ -51,3 +51,33 @@ var selectElement = document.querySelector("select");
 // selectElement.oninput = function (e) {
 //   console.log(e);
 // };
+
+// III. Một số DOM events khác
+// 1. preventDefault: loại bỏ sự kiện mặc định của trình duyệt
+
+// var buttonElement = document.querySelector("form > button[type='submit']");
+// buttonElement.onclick = function (e) {
+//   e.preventDefault();
+// };
+
+// document
+//   .getElementById("myCheckbox")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//   });
+
+// 2. stopPropagation: loại bỏ sự kiện nổi bọt
+// function func1(event) {
+//   alert("DIV 1");
+//   if (document.getElementById("check").checked) {
+//     event.stopPropagation();
+//   }
+// }
+
+// function func2() {
+//   alert("DIV 2");
+// }
+
+// IV: Event listener
+// 1. Xữ lý nhiều việc khi 1 event xảy ra
+// 2. Lắng nghe / hủy bỏ lắng nghe

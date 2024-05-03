@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 12</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <!-- Sự kiện nổi bọt -->
@@ -28,14 +29,54 @@
       <span>DOM Events 3</span>
     </h1> -->
 
-    <input type="text" />
+    <!-- <input type="text" />
     <input type="checkbox" />
 
     <select>
       <option value="A">1</option>
       <option value="B">2</option>
       <option value="C">3</option>
-    </select>
+    </select> -->
+
+    <!-- <form id="prospects_form" method="post">
+      <input
+        id="form_name"
+        tabindex="1"
+        class="boxsize"
+        type="text"
+        name="name"
+        placeholder="Full name*"
+        maxlength="80"
+        value=""
+      />
+      <input
+        id="form_email"
+        tabindex="2"
+        class="boxsize"
+        type="text"
+        name="email"
+        placeholder="Email*"
+        maxlength="100"
+        value=""
+      />
+
+      <button id="form_send" tabindex="5" class="btn" type="submit">
+        Send
+      </button>
+    </form> -->
+
+    <!-- Try to check this box: <input type="checkbox" id="myCheckbox" />-->
+
+    <h1>The stopPropagation() Method</h1>
+
+    <p>Click DIV 1:</p>
+    <div onclick="func2()">
+      DIV 2
+      <div onclick="func1(event)">DIV 1</div>
+    </div>
+
+    Stop propagation:
+    <input type="checkbox" id="check" />
 
     <script src="./index.js"></script>
   </body>

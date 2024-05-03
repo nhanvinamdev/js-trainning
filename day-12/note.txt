@@ -1,4 +1,4 @@
-1. DOM events
+I. DOM events
 Có 2 dạng DOM events: 
 - Sự kiện của ng dùng gây ra: onClick, onHover, onScroll...
 - Sự kiện của trình duyệt: tải trang web,...
@@ -11,6 +11,14 @@ Có 2 cách để thể hiện DOM events
 2. Dùng JS
 
 
-2. Luyện tập:
+II. Luyện tập:
 - Input/ select
 - keyup/ down
+
+III. Một số DOM events khác
+1. preventDefault: loại bỏ sự kiện mặc định của trình duyệt
+2. stopPropagation: loại bỏ sự kiện nổi bọt
+
+IV: Event listener
+1. Xữ lý nhiều việc khi 1 event xảy ra
+2. Lắng nghe / hủy bỏ lắng nghe
