@@ -1,7 +1,10 @@
 1. DOM events
 Có 2 dạng DOM events: 
-- Sự kiện của ng dùng gây ra: onClick...
+- Sự kiện của ng dùng gây ra: onClick, onHover, onScroll...
 - Sự kiện của trình duyệt: tải trang web,...
+
+Các events dùng nhiều: onclick, onchange, onscroll, onkeyup, onkeydown
+link: https://www.w3schools.com/jsref/dom_obj_event.asp
 
 Có 2 cách để thể hiện DOM events
 1. Gắn thẳng sự kiện vào DOM 
