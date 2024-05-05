@@ -57,7 +57,8 @@ var selectElement = document.querySelector("select");
 
 // var buttonElement = document.querySelector("form > button[type='submit']");
 // buttonElement.onclick = function (e) {
-//   e.preventDefault();
+//   // e.preventDefault();
+//   console.log("clicked");
 // };
 
 // document
@@ -69,17 +70,15 @@ var selectElement = document.querySelector("select");
 // 2. stopPropagation: loại bỏ sự kiện nổi bọt
 // function func1(event) {
 //   alert("DIV 1");
-//   if (document.getElementById("check").checked) {
-//     event.stopPropagation();
-//   }
+//   event.stopPropagation();
 // }
 
 // function func2() {
 //   alert("DIV 2");
 // }
 
-// IV: Event listener
-// 1. Xữ lý nhiều việc khi 1 event xảy ra
+// // IV: Event listener
+// // 1. Xữ lý nhiều việc khi 1 event xảy ra
 function viec1() {
   console.log("viec 1");
 }
@@ -93,6 +92,12 @@ function viec3() {
 }
 
 var btn = document.querySelector("button");
+
+// btn.onclick = function () {
+//   viec1();
+//   viec2();
+//   viec3();
+// };
 
 btn.addEventListener("click", viec1);
 // btn.addEventListener("click", viec2);
