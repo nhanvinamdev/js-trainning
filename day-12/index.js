@@ -80,4 +80,26 @@ var selectElement = document.querySelector("select");
 
 // IV: Event listener
 // 1. Xữ lý nhiều việc khi 1 event xảy ra
+function viec1() {
+  console.log("viec 1");
+}
+
+function viec2() {
+  console.log("viec 2");
+}
+
+function viec3() {
+  console.log("viec 3");
+}
+
+var btn = document.querySelector("button");
+
+btn.addEventListener("click", viec1);
+// btn.addEventListener("click", viec2);
+// btn.addEventListener("click", viec3);
+
+setTimeout(() => {
+  btn.removeEventListener("click", viec1);
+}, 3000);
+
 // 2. Lắng nghe / hủy bỏ lắng nghe
