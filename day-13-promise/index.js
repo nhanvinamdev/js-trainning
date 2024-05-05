@@ -54,8 +54,10 @@ function makeCoffee() {
   khoiDongMay()
     .then(function (text) {
       loading = true;
-      console.log(text);
-      console.log("loading:", loading);
+      console.log({
+        text,
+        loading,
+      });
       return phaCaPhe();
     })
     .then(function (text) {
