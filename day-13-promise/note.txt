@@ -1,0 +1,17 @@
+I. Nhắc lại đồng bộ và bất đồng bộ (sync vs async)
+
+II. Ôn tập lại callback function
+
+III. Promises là gì? vì sao phải sử dụng nó?
+1. Cú pháp của Promises
+new Promise((resolve, reject) => {
+})
+
+2. Các trạng thái của Promises
+Pending (đang xử lý)
+Fulfilled (đã hoàn thành)
+Rejected (đã bị từ chối)
+
+2. Resolve và reject trong Promises
+
+IV: Promises chain
