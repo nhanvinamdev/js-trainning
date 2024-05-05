@@ -5,7 +5,7 @@
 
 //   setTimeout(() => {
 //     console.log("Đang pha cà phê...");
-//   }, 2000);
+//   }, 3000);
 
 //   setTimeout(() => {
 //     console.log("Pha cà phê xong rồi nè");
@@ -15,11 +15,12 @@
 // makeCoffee();
 
 // function makeCoffee() {
-//   setTimeout(() => {
+//   // callback hell
+//   setTimeout(function () {
 //     console.log("Khởi động máy pha cà phê");
-//     setTimeout(() => {
+//     setTimeout(function () {
 //       console.log("Đang pha cà phê...");
-//       setTimeout(() => {
+//       setTimeout(function () {
 //         console.log("Pha cà phê xong rồi nè");
 //       }, 1000);
 //     }, 5000);
@@ -27,10 +28,13 @@
 // }
 
 // makeCoffee();
+
+let loading = false;
 let khoiDongMay = () =>
   new Promise(function (resolve, reject) {
     setTimeout(() => {
-      resolve("Khởi động máy pha cà phê");
+      resolve("Khởi động máy pha cà phê"); // đẩy ra những dữ liệu thành công
+      // reject(new Error("Máy pha cà phê bị lỗi!"));
     }, 3000);
   });
 
@@ -48,30 +52,28 @@ let phaXong = () =>
     }, 1000);
   });
 
-let loading = false;
-
 function makeCoffee() {
+  loading = true;
+  console.log("loading:", loading);
+
   khoiDongMay()
     .then(function (text) {
-      loading = true;
-      console.log({
-        text,
-        loading,
-      });
+      console.log("text:", text);
       return phaCaPhe();
     })
     .then(function (text) {
-      console.log(text);
+      console.log("text:", text);
       return phaXong();
     })
     .then(function (text) {
-      console.log(text);
+      console.log("text:", text);
     })
-    .catch((e) => console.log(e))
-    .finally(() => {
+    .catch(function (error) {
+      console.log("error:", error);
+    })
+    .finally(function () {
       loading = false;
       console.log("loading:", loading);
-      console.log("all done");
     });
 }
 

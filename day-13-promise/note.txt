@@ -2,10 +2,13 @@ I. Nhắc lại đồng bộ và bất đồng bộ (sync vs async)
 
 II. Ôn tập lại callback function
 
-III. Promises là gì? vì sao phải sử dụng nó?
+III. Promises là gì? vì sao phải sử dụng nó?: để fix callback hell
 1. Cú pháp của Promises
-new Promise((resolve, reject) => {
+new Promise(function(resolve, reject) => {
 })
+
+- resolve: thành công
+- reject: thất bại
 
 2. Các trạng thái của Promises
 Pending (đang xử lý)
@@ -20,6 +23,8 @@ promiseState(a).then((state) => console.log(state)); // fulfilled
 promiseState(b).then((state) => console.log(state)); // rejected
 promiseState(c).then((state) => console.log(state)); // pending
 
-2. Resolve và reject trong Promises
+.then: Xử lý những case đúng
+.catch: Xử lý lỗi
+.finally: then hoặc catch chạy xong, sẽ chạy finally (áp dụng cho loading)
 
-IV: Promises chain
+IV: Promises chain: Fix callback hell
