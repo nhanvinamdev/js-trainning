@@ -1,0 +1,6 @@
+1. Let & const
+- Sự khác nhau giữ var/ let/ const:Scope, Hoisting
+- Assignent
+2. Template Literals
+3. Multi-line string
+4. Arrow Function
