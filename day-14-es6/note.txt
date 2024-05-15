@@ -7,3 +7,12 @@ I.ES6 là từ viết tắt của ECMAScript 6,
 2. Template Literals string
 3. Multi-line string
 4. Arrow Function
+5. Enhanced object literals
+- Định nghĩa key - value cho object
+- Định nghĩa method cho object 
+- Định nghĩa key cho object dưới dạng biến (getName(){})
+6. Default parameter values
+7. Destructuring
+- Array
+- Object
+8. Rest parameter (nối mảng / nối object)
