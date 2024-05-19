@@ -9,11 +9,11 @@ I.ES6 là từ viết tắt của ECMAScript 6,
 4. Arrow Function
 5. Enhanced object literals
 - Định nghĩa key - value cho object
-- Định nghĩa method cho object 
-- Định nghĩa key cho object dưới dạng biến (getName(){})
+- Định nghĩa method cho object (getName(){})
+- Định nghĩa key cho object dưới dạng biến 
 6. Default parameter values
 7. Destructuring
-- Array
 - Object
+- Array
 8. Rest parameter (nối mảng / nối object)
-9. Modules
+9. Modules: Dùng để phân tách thành nhiều file code khác nhau
