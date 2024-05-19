@@ -16,3 +16,4 @@ I.ES6 là từ viết tắt của ECMAScript 6,
 - Array
 - Object
 8. Rest parameter (nối mảng / nối object)
+9. Modules
